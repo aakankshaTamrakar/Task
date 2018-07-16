@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Style the content */
+.content1{
+    background-color: #ddd;
+    width:100%;
+    padding: 10px;
+    height: 200px; /* Should be removed. Only for demonstration */
+}
+
+.content{
+    background-color: #ddd;
+    height:100%;
+    padding: 10px;
+    height: auto; /* Should be removed. Only for demonstration */
+}
+@media screen and (min-width: 486px) {
+    .content1 {width:100%; float: left; height:auto;}
+}
+
+@media screen and (min-width: 290px) {
+    .content1 {width:100%; float: left; height:auto;}
+
+/* Style the footer */
+.footer {
+    background-color: #333;
+    padding: 10px;
+	color:#fff;
+}
+
+.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+    height:150px;
+}
+.gallery img{
+			width:100%;
+            height:100%;
+}
+.gallery img:hover{
+border:1px solid black;
+}
+.btn{
+	width:100px;
+    height:50px;
+    background:#337ab7;
+    color:#fff;
+    border-radius:10px;
+}
+
+/* Model CSS */
+
+
+.mpopup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+.mpopup-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 60%;
+    border:1px solid #000;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+.mpopup-head {
+    padding: 2px 16px;
+    background-color: ;
+    color: #000;
+}
+.mpopup-main {padding: 2px 16px;}
+
+/* add animation effects */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* close button style */
+.close {
+    color: grey;
+    float: right;
+    font-size: 28px;
+    text-align:center;
+    font-weight: bold;
+    border-bottom:1px solid #000;
+    border-left:1px solid #000;
+    width:30px;
+    margin-right:-15.5px;
+    margin-top:-2px;
+}
+.close:hover, .close:focus {
+    background-color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
